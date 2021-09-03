@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script src="index.js"></script>
+        <link rel='stylesheet'href='index.css' />
+    </head>
+    <body onload="displayTable()">
+       
+       
+        <h1> Address Book</h1>
+        <label for="fname">Search by mail or name:</label>
+        <input type="text" id="fname" name="fname" onkeyup="showHint(this.value)">
+        <h2>Contacts :</h2>
+        <table>
+            <tr>
+                <td>
+                    <table id='list' >
+                        <tr class="fields">
+                            <th>Name </th>
+                            <th>Address </th>
+                            <th>Phone </th>
+                            <th>Mobile </th>
+                            <th>E-mail </th>
+                            <th>Website </th>
+                        </tr>
+                    </table>
+                </td>
+             </tr>
+            <tr>
+                
+                <td id='first'>
+                    <br><br>
+                    <h2>Add Contact :</h2>
+
+                    <table>
+                    <form method='post' action='submit.php'>
+                        
+
+                        <tr><td>Name:</td><td><input type='text' name='name'></td></tr>
+                        <tr><td>Address:</td><td><input type='text' name='address'></td></tr>
+                        <tr><td>Phone:</td><td><input type='text' name='phone'></td></tr>
+                        <tr><td>Mobile:</td><td><input type='text' name='mobile'></td></tr>
+                        <tr><td>E-mail:</td><td><input type='text' name='email'></td></tr>
+                        <tr><td>Website:</td><td><input type='text' name='website'></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td></td></tr>
+                        <tr><td><input class="button" type='submit' ></td></tr>
+                       
+                    </form>
+                </table>
+                </td>
+            </tr>
+                
+        </table>
+               
+            
+    </body>
+</html>
